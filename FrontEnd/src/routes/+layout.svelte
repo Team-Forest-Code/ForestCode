@@ -5,7 +5,7 @@
 </script>
 
 <div class="app">
-	<!-- <Header /> -->
+	<Header />
 
 	<main>
 		<slot />
@@ -17,7 +17,7 @@
 </div>
 
 <style>
-	.app {
+	/* .app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
@@ -32,7 +32,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
+	} */
 
 	footer {
 		display: flex;
@@ -46,9 +46,9 @@
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	/* @media (min-width: 480px) {
 		footer {
 			padding: 12px 0;
 		}
-	}
+	} */
 </style>

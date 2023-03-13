@@ -5,7 +5,7 @@
 
 
 </script>
-<section in:fade out:fade on:introstart  on:outrostart on:introend on:outroend class = "h-[90vh] grid grid-rows-3 content-center">
+<section class = "h-[90vh]  grid grid-rows-3 content-center">
 	<div class ="">
 		<div class = "flex m-[3vw] flex-wrap">
 			<div class="w-[100%] text-2xl font-semibold">Welcome To Forest Code</div>
