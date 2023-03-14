@@ -5,7 +5,9 @@
 	"/about": [
 		"src/routes/about/+page.ts"
 	],
-	"/newPage": [],
+	"/newPage": [
+		"src/routes/newPage/+page.server.ts"
+	],
 	"/sverdle": [
 		"src/routes/sverdle/+page.server.ts"
 	],
