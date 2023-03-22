@@ -4,7 +4,11 @@
 	import './styles.css';
 </script>
 
-<div class="app">
+<!-- <div class = "sm:invisible font-bold text-red-800 flex justify-center ">
+	Mobile View is not supported for this website. Please view in bigger screen.
+
+</div> -->
+<div class="app sm:visible invisible">
 	<Header />
 
 	<main>

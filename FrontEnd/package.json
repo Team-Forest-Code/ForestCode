@@ -37,5 +37,12 @@
 		"vite": "^4.0.0",
 		"vitest": "^0.25.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"svelte-forms": "^2.3.1",
+		"svelte-forms-lib": "^2.0.1",
+		"svelte-prism": "^1.1.6",
+		"svelte-use-form": "^2.6.1",
+		"yup": "^1.0.2"
+	}
 }

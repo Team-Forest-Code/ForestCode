@@ -5,7 +5,10 @@
 	"/about": [
 		"src/routes/about/+page.ts"
 	],
+	"/login": [],
 	"/newPage": [],
+	"/random": [],
+	"/signup": [],
 	"/sverdle": [
 		"src/routes/sverdle/+page.server.ts"
 	],
