@@ -1,4 +1,6 @@
 <script>
+  import Prism from "prismjs";
+
   import tree from "$lib/images/tree.svg";
   import apple from "$lib/images/apple.svg";
   import bench from "$lib/images/bench.svg";
@@ -10,7 +12,7 @@
   } = data;
   const content = Object.values(files)[0].content;
 
-  // TODO: specify which note this is
+  // TODO: tell which note this is
   let isShowing = false;
 
   function handleClick() {
@@ -18,9 +20,21 @@
   }
 </script>
 
+<svelte:head>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism-dark.min.css"
+    rel="stylesheet"
+  />
+</svelte:head>
 <section class="relative h-[100vh] my-10">
   {#if isShowing}
-    <div>{content}</div>
+    <pre>
+      <!-- TODO: python; dynamic language -->
+      {@html Prism.highlight(content, Prism.languages.javascript)}
+    </pre>
+    <!-- <pre>
+      <code class="language-python">{content}</code>
+    </pre> -->
   {/if}
   <img src={tree} alt="tree img" class=" w-[100vw] h-[100vh]" />
   <!-- ROW 1 -->
