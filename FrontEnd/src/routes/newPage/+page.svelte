@@ -5,22 +5,23 @@
 
   export let data;
 
-  const { data: gists } = data;
-  const urls = [];
+  const {
+    data: { files },
+  } = data;
+  const content = Object.values(files)[0].content;
 
-  for (const gist of gists) {
-    const { html_url: url } = gist;
-    urls.push(url);
-  }
-
-  console.log(urls); // TODO: remove console.log
+  // TODO: specify which note this is
+  let isShowing = false;
 
   function handleClick() {
-    console.log("clicked");
+    isShowing = !isShowing;
   }
 </script>
 
 <section class="relative h-[100vh] my-10">
+  {#if isShowing}
+    <div>{content}</div>
+  {/if}
   <img src={tree} alt="tree img" class=" w-[100vw] h-[100vh]" />
   <!-- ROW 1 -->
   <button on:click={handleClick}>
@@ -30,6 +31,7 @@
       class="absolute w-[7vw] top-[0vh] left-[46vw] hover:w-[8vw]"
     />
   </button>
+
   <!-- ROW 2 -->
   <img
     src={apple}

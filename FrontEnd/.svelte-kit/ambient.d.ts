@@ -27,6 +27,7 @@
  */
 declare module '$env/static/private' {
 	export const TOKEN: string;
+	export const ID: string;
 	export const ALLUSERSPROFILE: string;
 	export const APPDATA: string;
 	export const ChocolateyInstall: string;
@@ -132,6 +133,7 @@ declare module '$env/static/public' {
 declare module '$env/dynamic/private' {
 	export const env: {
 		TOKEN: string;
+		ID: string;
 		ALLUSERSPROFILE: string;
 		APPDATA: string;
 		ChocolateyInstall: string;
