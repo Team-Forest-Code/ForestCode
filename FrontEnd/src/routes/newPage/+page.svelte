@@ -29,14 +29,14 @@
 <section class="relative h-[100vh] my-10">
   {#if isShowing}
     <pre>
-      <!-- TODO: python; dynamic language -->
-      {@html Prism.highlight(content, Prism.languages.javascript)}
+      <!-- TODO: dynamic language -->
+      {@html Prism.highlight(content, Prism.languages.js, "js")}
     </pre>
     <!-- <pre>
       <code class="language-python">{content}</code>
     </pre> -->
   {/if}
-  <img src={tree} alt="tree img" class=" w-[100vw] h-[100vh]" />
+  <img src={tree} alt="tree img" class="w-[100vw] h-[100vh]" />
   <!-- ROW 1 -->
   <button on:click={handleClick}>
     <img
