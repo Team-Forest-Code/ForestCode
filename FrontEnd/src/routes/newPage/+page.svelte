@@ -10,7 +10,10 @@
   const {
     data: { files },
   } = data;
-  const content = Object.values(files)[0].content;
+
+  const file = Object.values(files)[0];
+  const content = file.content;
+  const language = file.language;
 
   // TODO: tell which note this is
   let isShowing = false;
@@ -26,15 +29,21 @@
     rel="stylesheet"
   />
 </svelte:head>
-<section class="relative h-[100vh] my-10">
+<section class="h-[100vh] my-10 relative">
   {#if isShowing}
-    <pre>
-      <!-- TODO: dynamic language -->
-      {@html Prism.highlight(content, Prism.languages.js, "js")}
+    <div class="flex flex-col">
+      <div>
+        <button>Edit</button>
+        <button on:click={handleClick}>Close</button>
+      </div>
+      <pre class="code rounded-md whitespace-pre-wrap w-3/4">
+      {@html Prism.highlight(
+          content,
+          Prism.languages[language.toLowerCase()],
+          language
+        )}
     </pre>
-    <!-- <pre>
-      <code class="language-python">{content}</code>
-    </pre> -->
+    </div>
   {/if}
   <img src={tree} alt="tree img" class="w-[100vw] h-[100vh]" />
   <!-- ROW 1 -->
