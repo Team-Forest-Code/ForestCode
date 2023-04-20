@@ -42,6 +42,7 @@
 	"dependencies": {
 		"octokit": "^2.0.14",
 		"prism-svelte": "^0.5.0",
-		"prismjs": "^1.29.0"
+		"prismjs": "^1.29.0",
+		"svelte-ace": "^1.0.21"
 	}
 }
