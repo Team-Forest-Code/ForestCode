@@ -1,11 +1,11 @@
 <script lang="ts">
   import { AceEditor } from "svelte-ace";
-  import "brace/mode/json";
+  import "brace/mode/python";
   import "brace/theme/chrome";
   let text = "";
 </script>
 
-<section>
+<section class = "border w-[100vw] flex justify-center">
   <AceEditor
     on:selectionChange={(obj) => console.log(obj.detail)}
     on:paste={(obj) => console.log(obj.detail)}
@@ -19,9 +19,9 @@
     on:commandKey={(obj) => console.log(obj.detail)}
     on:changeMode={(obj) => console.log(`change mode : ${obj.detail}`)}
     on:blur={() => console.log('blur')}
-    width='100%'
-    height='300px'
-    lang="json"
+    width='85vw'
+    height='100vh'
+    lang="python"
     theme="chrome"
     value={text} />
 </section>
