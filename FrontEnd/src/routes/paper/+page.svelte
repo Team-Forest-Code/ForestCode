@@ -1,12 +1,27 @@
 <script lang="ts">
-  import CodeSection from "./codeSection.svelte";
+  import codeSectionP from "./codeSectionP.svelte";
   import EditSection from "./editSection.svelte";
+  import CodeSectionJ from "./codeSectionJ.svelte";
+  import CodeSectionJs from "./codeSectionJS.svelte";
+  import CodeSectionC from "./codeSectionC.svelte";
 
   let components: any[] = [];
 
-  let addCode = () => {
-    components = [...components, {id:components.length, component: CodeSection}]
+  let addPCode = () => {
+    components = [...components, {id:components.length, component: codeSectionP}]
   };
+
+  let addJCode = () => {
+    components = [...components, {id:components.length, component: CodeSectionJ}]
+  }
+
+  let addJSCode = () => {
+    components = [...components, {id:components.length, component: CodeSectionJs}]
+  }
+
+  let addCCode = () => {
+    components = [...components, {id:components.length, component: CodeSectionC}]
+  }
 
   let addNote = () => {
     components = [...components, {id:components.length, component: EditSection}]
@@ -19,13 +34,16 @@
 </script>
 
 <section class = "border w-[100vw] p-[20px]">
-  <div class = "flex justify-around">
-    <button class = "border" on:click={addCode}>Add Python Code</button>
-    <button class = "border" on:click={addNote}>Add Text</button>
+  <div class = "flex justify-around mb-[2%]">
+    <button class = "bg-white hover:bg-gray-100  font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow" on:click={addNote}>Add Text</button>
+    <button class = "bg-white hover:bg-gray-100  font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow" on:click={addPCode}>Add Python Code</button>
+    <button class = "bg-white hover:bg-gray-100  font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow" on:click={addJCode}>Add Java Code</button>
+    <button class = "bg-white hover:bg-gray-100  font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow" on:click={addJSCode}>Add Javascript Code</button>
+    <button class = "bg-white hover:bg-gray-100  font-semibold py-2 px-4 border border-gray-400 rounded-2xl shadow" on:click={addCCode}>Add C++ Code</button>
   </div>
   {#each components as component}
   <div>
-    <button on:click={() => removeComponent(component.id)}>Remove</button>
+    <button class = "hover:text-red-600" on:click={() => removeComponent(component.id) }>Remove</button>
     <svelte:component this={component.component} />
   </div>
 {/each}

@@ -1,6 +1,6 @@
 <script lang="ts">
     import { AceEditor } from "svelte-ace";
-    import "brace/mode/python";
+    import "brace/mode/java";
     import "brace/theme/chrome";
     let text = "";
   </script>
@@ -20,8 +20,8 @@
       on:changeMode={(obj) => console.log(`change mode : ${obj.detail}`)}
       on:blur={() => console.log('blur')}
       width='97vw'
-      height='20vh'
-      lang="python"
+      height='25vh'
+      lang="java"
       theme="chrome"
       value={text} />
   </section>

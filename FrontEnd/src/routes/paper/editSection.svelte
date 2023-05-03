@@ -19,7 +19,7 @@
           toolbar: toolbarOptions
         },
         theme: "snow",
-        placeholder: "Write your story..."
+        placeholder: "Write!"
       });
     });
   </script>
