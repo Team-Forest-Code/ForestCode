@@ -39,8 +39,9 @@
     Create a New Note
   </button>
 
-
-  <img src = {apple} alt = "apple"  class = "absolute  w-[10vw] top-[2vh] lg:w-[7vw] left-[44vw] lg:top-[0%] lg:left-[46%] hover:w-[8vw]"/>
+  <a href = "/paper">
+    <img src = {apple} alt = "apple"  class = "absolute  w-[10vw] top-[2vh] lg:w-[7vw] left-[44vw] lg:top-[0%] lg:left-[46%] hover:w-[8vw]"/>
+  </a>
 
   
   <!-- ROW 2 -->
