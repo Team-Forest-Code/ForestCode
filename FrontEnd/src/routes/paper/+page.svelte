@@ -1,27 +1,36 @@
 <script lang="ts">
-  import { AceEditor } from "svelte-ace";
-  import "brace/mode/python";
-  import "brace/theme/chrome";
-  let text = "";
+  import CodeSection from "./codeSection.svelte";
+  import EditSection from "./editSection.svelte";
+
+  let components: any[] = [];
+
+  let addCode = () => {
+    components = [...components, {id:components.length, component: CodeSection}]
+  };
+
+  let addNote = () => {
+    components = [...components, {id:components.length, component: EditSection}]
+  };
+
+  function removeComponent(componentId) {
+    components = components.filter(component => component.id !== componentId);
+  }
+
 </script>
 
-<section class = "border w-[100vw] flex justify-center">
-  <AceEditor
-    on:selectionChange={(obj) => console.log(obj.detail)}
-    on:paste={(obj) => console.log(obj.detail)}
-    on:input={(obj) => console.log(obj.detail)}
-    on:focus={() => console.log('focus')}
-    on:documentChange={(obj) => console.log(`document change : ${obj.detail}`)}
-    on:cut={() => console.log('cut')}
-    on:cursorChange={() => console.log('cursor change')}
-    on:copy={() => console.log('copy')}
-    on:init={(editor) => console.log(editor.detail)}
-    on:commandKey={(obj) => console.log(obj.detail)}
-    on:changeMode={(obj) => console.log(`change mode : ${obj.detail}`)}
-    on:blur={() => console.log('blur')}
-    width='85vw'
-    height='100vh'
-    lang="python"
-    theme="chrome"
-    value={text} />
+<section class = "border w-[100vw] p-[20px]">
+  <div class = "flex justify-around">
+    <button class = "border" on:click={addCode}>Add Python Code</button>
+    <button class = "border" on:click={addNote}>Add Text</button>
+  </div>
+  {#each components as component}
+  <div>
+    <button on:click={() => removeComponent(component.id)}>Remove</button>
+    <svelte:component this={component.component} />
+  </div>
+{/each}
+
+
+  <!-- <CodeSection />
+  <EditSection /> -->
 </section>
