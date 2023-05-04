@@ -4,20 +4,24 @@
 	import './styles.css';
 </script>
 
-<div class="app">
-	<!-- <Header /> -->
+<!-- <div class = "sm:invisible font-bold text-red-800 flex justify-center ">
+	Mobile View is not supported for this website. Please view in bigger screen.
+
+</div> -->
+<div class="app sm:visible invisible">
+	<Header />
 
 	<main>
 		<slot />
 	</main>
 
 	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		<p></p>
 	</footer>
 </div>
 
 <style>
-	.app {
+	/* .app {
 		display: flex;
 		flex-direction: column;
 		min-height: 100vh;
@@ -32,7 +36,7 @@
 		max-width: 64rem;
 		margin: 0 auto;
 		box-sizing: border-box;
-	}
+	} */
 
 	footer {
 		display: flex;
@@ -46,9 +50,9 @@
 		font-weight: bold;
 	}
 
-	@media (min-width: 480px) {
+	/* @media (min-width: 480px) {
 		footer {
 			padding: 12px 0;
 		}
-	}
+	} */
 </style>
