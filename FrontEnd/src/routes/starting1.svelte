@@ -21,7 +21,7 @@
 			Make a New Note
 		</button>
 		</a>
-		<a href = "/notePage" class="w-[40%] h-[40%]  bg-slate-300 hover:bg-slate-400 font-bold py-5 px-4 rounded-full text-black">
+		<a href = "/random" class="w-[40%] h-[40%]  bg-slate-300 hover:bg-slate-400 font-bold py-5 px-4 rounded-full text-black">
 		<button class = "w-[100%] h-[100%]">
 			About Us
 		</button>
