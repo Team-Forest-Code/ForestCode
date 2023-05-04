@@ -59,7 +59,7 @@
 				<a class="text-gray-100 hover:text-[#3e363f]" href = "/newPage"
 				  >Make A Note</a
 				>
-				<a class="text-gray-100 hover:text-[#3e363f]" href = "./random">About Us</a>
+				<a class="text-gray-100 hover:text-[#3e363f]" href = "./us">About Us</a>
 				<!-- <a class="text-gray-100 hover:text-[#3e363f]" href = "./random">Random</a> -->
 				<div class="space-y-2">
 				  <a

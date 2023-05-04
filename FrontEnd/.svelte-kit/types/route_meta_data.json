@@ -15,5 +15,6 @@
 	],
 	"/sverdle/how-to-play": [
 		"src/routes/sverdle/how-to-play/+page.ts"
-	]
+	],
+	"/us": []
 }
