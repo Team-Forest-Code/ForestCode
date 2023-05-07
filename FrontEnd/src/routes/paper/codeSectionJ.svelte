@@ -8,6 +8,7 @@
     export let language;
 
     console.log(content);
+
   </script>
   
   <section class = "my-2">
@@ -28,6 +29,8 @@
       height='25vh'
       lang="java"
       theme="chrome"
+
       value={language === "Java" ? content : text} />
+
   </section>
   

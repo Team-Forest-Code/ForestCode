@@ -60,6 +60,19 @@ declare module '$env/static/private' {
 	export const npm_config_global_prefix: string;
 	export const npm_config_init_module: string;
 	export const npm_config_local_prefix: string;
+
+	export const USER: string;
+	export const COMMAND_MODE: string;
+	export const npm_config_globalconfig: string;
+	export const SSH_AUTH_SOCK: string;
+	export const __CF_USER_TEXT_ENCODING: string;
+	export const WARP_IS_LOCAL_SHELL_SESSION: string;
+	export const npm_execpath: string;
+	export const WARP_USE_SSH_WRAPPER: string;
+	export const PATH: string;
+	export const npm_package_json: string;
+	export const _: string;
+	export const WARP_PS1: string;
 	export const npm_config_metrics_registry: string;
 	export const npm_config_node_gyp: string;
 	export const npm_config_noproxy: string;
@@ -68,6 +81,24 @@ declare module '$env/static/private' {
 	export const npm_config_user_agent: string;
 	export const npm_execpath: string;
 	export const npm_lifecycle_event: string;
+	export const EDITOR: string;
+	export const npm_package_name: string;
+	export const LANG: string;
+	export const XPC_FLAGS: string;
+	export const npm_config_node_gyp: string;
+	export const npm_package_version: string;
+	export const XPC_SERVICE_NAME: string;
+	export const SHLVL: string;
+	export const HOME: string;
+	export const HOMEBREW_PREFIX: string;
+	export const npm_config_cache: string;
+	export const LOGNAME: string;
+	export const npm_lifecycle_script: string;
+	export const SSH_SOCKET_DIR: string;
+	export const npm_config_user_agent: string;
+	export const INFOPATH: string;
+	export const HOMEBREW_CELLAR: string;
+	export const CONDA_CHANGEPS1: string;
 	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
 	export const npm_package_json: string;
@@ -165,15 +196,51 @@ declare module '$env/dynamic/private' {
 		npm_config_global_prefix: string;
 		npm_config_init_module: string;
 		npm_config_local_prefix: string;
+
+		USER: string;
+		COMMAND_MODE: string;
+		npm_config_globalconfig: string;
+		SSH_AUTH_SOCK: string;
+		__CF_USER_TEXT_ENCODING: string;
+		WARP_IS_LOCAL_SHELL_SESSION: string;
+		npm_execpath: string;
+		WARP_USE_SSH_WRAPPER: string;
+		PATH: string;
+		npm_package_json: string;
+		_: string;
+		WARP_PS1: string;
+
 		npm_config_metrics_registry: string;
 		npm_config_node_gyp: string;
 		npm_config_noproxy: string;
 		npm_config_prefix: string;
+
 		npm_config_userconfig: string;
 		npm_config_user_agent: string;
 		npm_execpath: string;
 		npm_lifecycle_event: string;
+
+		EDITOR: string;
+		npm_package_name: string;
+		LANG: string;
+		XPC_FLAGS: string;
+		npm_config_node_gyp: string;
+		npm_package_version: string;
+		XPC_SERVICE_NAME: string;
+		SHLVL: string;
+		HOME: string;
+		HOMEBREW_PREFIX: string;
+		npm_config_cache: string;
+		LOGNAME: string;
 		npm_lifecycle_script: string;
+		SSH_SOCKET_DIR: string;
+		npm_config_user_agent: string;
+		INFOPATH: string;
+		HOMEBREW_CELLAR: string;
+		CONDA_CHANGEPS1: string;
+
+		npm_lifecycle_script: string;
+
 		npm_node_execpath: string;
 		npm_package_json: string;
 		npm_package_name: string;
