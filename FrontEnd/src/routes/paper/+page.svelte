@@ -1,17 +1,30 @@
 <script lang="ts">
+  // @ts-nocheck
   import codeSectionP from "./codeSectionP.svelte";
   import EditSection from "./editSection.svelte";
   import CodeSectionJ from "./codeSectionJ.svelte";
   import CodeSectionJs from "./codeSectionJS.svelte";
   import CodeSectionC from "./codeSectionC.svelte";
 
+  export let data;
+
+  const {
+    data: { files },
+  } = data;
+
+  const file = Object.values(files)[0];
+  const content = file.content;
+  const language = file.language;
+
   let components: any[] = [];
+  let props;
 
   let addPCode = () => {
     components = [
       ...components,
       { id: components.length, component: codeSectionP },
     ];
+    props = { content, language };
   };
 
   let addJCode = () => {
@@ -19,6 +32,7 @@
       ...components,
       { id: components.length, component: CodeSectionJ },
     ];
+    props = { content, language };
   };
 
   let addJSCode = () => {
@@ -26,6 +40,7 @@
       ...components,
       { id: components.length, component: CodeSectionJs },
     ];
+    props = { content, language };
   };
 
   let addCCode = () => {
@@ -33,6 +48,7 @@
       ...components,
       { id: components.length, component: CodeSectionC },
     ];
+    props = { content, language };
   };
 
   let addNote = () => {
@@ -76,7 +92,7 @@
         class="hover:text-red-600"
         on:click={() => removeComponent(component.id)}>Remove</button
       >
-      <svelte:component this={component.component} />
+      <svelte:component this={component.component} {...props} />
     </div>
   {/each}
 

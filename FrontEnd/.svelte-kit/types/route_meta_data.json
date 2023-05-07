@@ -9,7 +9,9 @@
 	"/newPage": [
 		"src/routes/newPage/+page.server.ts"
 	],
-	"/paper": [],
+	"/paper": [
+		"src/routes/paper/+page.server.ts"
+	],
 	"/random": [],
 	"/signup": [],
 	"/sverdle": [

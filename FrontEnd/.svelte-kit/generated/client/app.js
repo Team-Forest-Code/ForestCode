@@ -19,7 +19,7 @@ export const dictionary = {
 	"/about": [3],
 	"/login": [4],
 	"/newPage": [~5],
-	"/paper": [6],
+	"/paper": [~6],
 	"/random": [7],
 	"/signup": [8],
 	"/sverdle": [~9],

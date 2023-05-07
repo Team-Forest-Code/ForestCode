@@ -14,8 +14,6 @@
     ids.push(id);
   }
 
-  console.log(ids);
-
   // TODO: tell which note this is
   let isShowing = false;
 
@@ -46,15 +44,24 @@
   >
     Create a New Note
   </button>
-  {#each ids as id}
+  <!-- {#each ids as id}
     <a href={`/paper?id=${id}`}>
       <img
         src={apple}
         alt="apple"
-        class="absolute w-[10vw] top-[2vh] lg:w-[7vw] left-[44vw] lg:top-[0%] lg:left-[46%] hover:w-[8vw]"
+        class="absolute border w-[10vw] top-[2vh] lg:w-[7vw] left-[44vw] lg:top-[0%] lg:left-[46%] hover:w-[8vw]"
       />
     </a>
-  {/each}
+  {/each} -->
+  <a href = {`/paper/?id=${ids[0]}`}>
+    <img src = {apple} alt = "apple"  class = "absolute  w-[10vw] top-[2vh] lg:w-[7vw] left-[44vw] lg:top-[0%] lg:left-[46%] hover:w-[8vw]"/>
+  </a>
+  <a href = {`/paper/?id=${ids[1]}`}>
+    <img src = {apple} alt = "apple" class = "absolute w-[10vw] top-[7%] lg:w-[7vw] left-[50%] lg:top-[6%]  hover:w-[8vw]"/>
+  </a>
+  <a href = {`/paper/?id=${ids[2]}`}>
+    <img src = {apple} alt = "apple"class = "absolute w-[10vw] top-[7%] lg:w-[7vw] lg:left-[43%] left-[40%] lg:top-[6%]  hover:w-[8vw]"/>
+  </a>
 
   <img
     src={bench}

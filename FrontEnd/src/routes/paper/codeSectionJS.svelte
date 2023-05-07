@@ -3,6 +3,9 @@
     import "brace/mode/javascript";
     import "brace/theme/chrome";
     let text = "";
+
+    export let content;
+    export let language;
   </script>
   
   <section class = "my-2">
@@ -23,6 +26,6 @@
       height='25vh'
       lang="javascript"
       theme="chrome"
-      value={text} />
+      value={language.toLowerCase() === "javascript" ? content : text} />
   </section>
   
