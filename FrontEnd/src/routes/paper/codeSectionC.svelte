@@ -3,6 +3,11 @@
     import "brace/mode/c_cpp";
     import "brace/theme/chrome";
     let text = "";
+
+
+    export let content;
+    export let language;
+
   </script>
   
   <section class = "my-2">
@@ -23,6 +28,8 @@
       height='25vh'
       lang="c_cpp"
       theme="chrome"
-      value={text} />
+
+      value={language === "C++" ? content : text} />
+
   </section>
   

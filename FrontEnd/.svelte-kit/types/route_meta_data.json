@@ -6,8 +6,13 @@
 		"src/routes/about/+page.ts"
 	],
 	"/login": [],
-	"/newPage": [],
-	"/paper": [],
+
+	"/newPage": [
+		"src/routes/newPage/+page.server.ts"
+	],
+	"/paper": [
+		"src/routes/paper/+page.server.ts"
+	],
 	"/random": [],
 	"/signup": [],
 	"/sverdle": [

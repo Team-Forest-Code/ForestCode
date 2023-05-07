@@ -26,20 +26,41 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const MANPATH: string;
-	export const TERM_PROGRAM: string;
-	export const NODE: string;
-	export const INIT_CWD: string;
-	export const TERM: string;
-	export const SHELL: string;
-	export const npm_config_metrics_registry: string;
-	export const HOMEBREW_REPOSITORY: string;
-	export const TMPDIR: string;
-	export const npm_config_global_prefix: string;
-	export const TERM_PROGRAM_VERSION: string;
+	export const TOKEN: string;
+	export const ALLUSERSPROFILE: string;
+	export const APPDATA: string;
+	export const ChocolateyInstall: string;
+	export const ChocolateyLastPathUpdate: string;
+	export const ChocolateyToolsLocation: string;
 	export const COLOR: string;
-	export const npm_config_noproxy: string;
+	export const CommonProgramFiles: string;
+	export const CommonProgramW6432: string;
+	export const COMPUTERNAME: string;
+	export const ComSpec: string;
+	export const DriverData: string;
+	export const EDITOR: string;
+	export const EFC_7680: string;
+	export const FPS_BROWSER_APP_PROFILE_STRING: string;
+	export const FPS_BROWSER_USER_PROFILE_STRING: string;
+	export const HOME: string;
+	export const HOMEDRIVE: string;
+	export const HOMEPATH: string;
+	export const INIT_CWD: string;
+	export const INTEL_DEV_REDIST: string;
+	export const LOCALAPPDATA: string;
+	export const LOGONSERVER: string;
+	export const MIC_LD_LIBRARY_PATH: string;
+	export const NODE: string;
+	export const NODE_ENV: string;
+	export const NODE_EXE: string;
+	export const NPM_CLI_JS: string;
+	export const npm_command: string;
+	export const npm_config_cache: string;
+	export const npm_config_globalconfig: string;
+	export const npm_config_global_prefix: string;
+	export const npm_config_init_module: string;
 	export const npm_config_local_prefix: string;
+
 	export const USER: string;
 	export const COMMAND_MODE: string;
 	export const npm_config_globalconfig: string;
@@ -52,11 +73,13 @@ declare module '$env/static/private' {
 	export const npm_package_json: string;
 	export const _: string;
 	export const WARP_PS1: string;
+	export const npm_config_metrics_registry: string;
+	export const npm_config_node_gyp: string;
+	export const npm_config_noproxy: string;
+	export const npm_config_prefix: string;
 	export const npm_config_userconfig: string;
-	export const npm_config_init_module: string;
-	export const __CFBundleIdentifier: string;
-	export const npm_command: string;
-	export const PWD: string;
+	export const npm_config_user_agent: string;
+	export const npm_execpath: string;
 	export const npm_lifecycle_event: string;
 	export const EDITOR: string;
 	export const npm_package_name: string;
@@ -76,10 +99,40 @@ declare module '$env/static/private' {
 	export const INFOPATH: string;
 	export const HOMEBREW_CELLAR: string;
 	export const CONDA_CHANGEPS1: string;
+	export const npm_lifecycle_script: string;
 	export const npm_node_execpath: string;
-	export const npm_config_prefix: string;
-	export const COLORTERM: string;
-	export const NODE_ENV: string;
+	export const npm_package_json: string;
+	export const npm_package_name: string;
+	export const npm_package_version: string;
+	export const NPM_PREFIX_NPM_CLI_JS: string;
+	export const NUMBER_OF_PROCESSORS: string;
+	export const OneDrive: string;
+	export const OneDriveCommercial: string;
+	export const OS: string;
+	export const Path: string;
+	export const PATHEXT: string;
+	export const PROCESSOR_ARCHITECTURE: string;
+	export const PROCESSOR_IDENTIFIER: string;
+	export const PROCESSOR_LEVEL: string;
+	export const PROCESSOR_REVISION: string;
+	export const ProgramData: string;
+	export const ProgramFiles: string;
+	export const ProgramW6432: string;
+	export const PROMPT: string;
+	export const PSModulePath: string;
+	export const PUBLIC: string;
+	export const SESSIONNAME: string;
+	export const SystemDrive: string;
+	export const SystemRoot: string;
+	export const TEMP: string;
+	export const TMP: string;
+	export const USERDOMAIN: string;
+	export const USERDOMAIN_ROAMINGPROFILE: string;
+	export const USERNAME: string;
+	export const USERPROFILE: string;
+	export const VBOX_MSI_INSTALL_PATH: string;
+	export const windir: string;
+	export const ZES_ENABLE_SYSMAN: string;
 }
 
 /**
@@ -109,20 +162,41 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		MANPATH: string;
-		TERM_PROGRAM: string;
-		NODE: string;
-		INIT_CWD: string;
-		TERM: string;
-		SHELL: string;
-		npm_config_metrics_registry: string;
-		HOMEBREW_REPOSITORY: string;
-		TMPDIR: string;
-		npm_config_global_prefix: string;
-		TERM_PROGRAM_VERSION: string;
+		TOKEN: string;
+		ALLUSERSPROFILE: string;
+		APPDATA: string;
+		ChocolateyInstall: string;
+		ChocolateyLastPathUpdate: string;
+		ChocolateyToolsLocation: string;
 		COLOR: string;
-		npm_config_noproxy: string;
+		CommonProgramFiles: string;
+		CommonProgramW6432: string;
+		COMPUTERNAME: string;
+		ComSpec: string;
+		DriverData: string;
+		EDITOR: string;
+		EFC_7680: string;
+		FPS_BROWSER_APP_PROFILE_STRING: string;
+		FPS_BROWSER_USER_PROFILE_STRING: string;
+		HOME: string;
+		HOMEDRIVE: string;
+		HOMEPATH: string;
+		INIT_CWD: string;
+		INTEL_DEV_REDIST: string;
+		LOCALAPPDATA: string;
+		LOGONSERVER: string;
+		MIC_LD_LIBRARY_PATH: string;
+		NODE: string;
+		NODE_ENV: string;
+		NODE_EXE: string;
+		NPM_CLI_JS: string;
+		npm_command: string;
+		npm_config_cache: string;
+		npm_config_globalconfig: string;
+		npm_config_global_prefix: string;
+		npm_config_init_module: string;
 		npm_config_local_prefix: string;
+
 		USER: string;
 		COMMAND_MODE: string;
 		npm_config_globalconfig: string;
@@ -135,12 +209,17 @@ declare module '$env/dynamic/private' {
 		npm_package_json: string;
 		_: string;
 		WARP_PS1: string;
+
+		npm_config_metrics_registry: string;
+		npm_config_node_gyp: string;
+		npm_config_noproxy: string;
+		npm_config_prefix: string;
+
 		npm_config_userconfig: string;
-		npm_config_init_module: string;
-		__CFBundleIdentifier: string;
-		npm_command: string;
-		PWD: string;
+		npm_config_user_agent: string;
+		npm_execpath: string;
 		npm_lifecycle_event: string;
+
 		EDITOR: string;
 		npm_package_name: string;
 		LANG: string;
@@ -159,10 +238,42 @@ declare module '$env/dynamic/private' {
 		INFOPATH: string;
 		HOMEBREW_CELLAR: string;
 		CONDA_CHANGEPS1: string;
+
+		npm_lifecycle_script: string;
+
 		npm_node_execpath: string;
-		npm_config_prefix: string;
-		COLORTERM: string;
-		NODE_ENV: string;
+		npm_package_json: string;
+		npm_package_name: string;
+		npm_package_version: string;
+		NPM_PREFIX_NPM_CLI_JS: string;
+		NUMBER_OF_PROCESSORS: string;
+		OneDrive: string;
+		OneDriveCommercial: string;
+		OS: string;
+		Path: string;
+		PATHEXT: string;
+		PROCESSOR_ARCHITECTURE: string;
+		PROCESSOR_IDENTIFIER: string;
+		PROCESSOR_LEVEL: string;
+		PROCESSOR_REVISION: string;
+		ProgramData: string;
+		ProgramFiles: string;
+		ProgramW6432: string;
+		PROMPT: string;
+		PSModulePath: string;
+		PUBLIC: string;
+		SESSIONNAME: string;
+		SystemDrive: string;
+		SystemRoot: string;
+		TEMP: string;
+		TMP: string;
+		USERDOMAIN: string;
+		USERDOMAIN_ROAMINGPROFILE: string;
+		USERNAME: string;
+		USERPROFILE: string;
+		VBOX_MSI_INSTALL_PATH: string;
+		windir: string;
+		ZES_ENABLE_SYSMAN: string;
 		[key: `PUBLIC_${string}`]: undefined;
 		[key: string]: string | undefined;
 	}
