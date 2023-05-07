@@ -6,7 +6,9 @@
 		"src/routes/about/+page.ts"
 	],
 	"/login": [],
-	"/newPage": [],
+	"/newPage": [
+		"src/routes/newPage/+page.server.ts"
+	],
 	"/paper": [],
 	"/random": [],
 	"/signup": [],
