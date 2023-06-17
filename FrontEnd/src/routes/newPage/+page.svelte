@@ -1,5 +1,4 @@
 <script>
-
   // @ts-nocheck
 
   import tree from "$lib/images/tree.svg";
@@ -21,7 +20,6 @@
   function handleClick() {
     isShowing = !isShowing;
   }
-
 
   let count = 0;
   let addApples = () => {
@@ -199,4 +197,3 @@
     l
   </div>
 </section>
-

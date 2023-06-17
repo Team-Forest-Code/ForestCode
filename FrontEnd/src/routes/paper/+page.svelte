@@ -1,13 +1,10 @@
 <script lang="ts">
-
   // @ts-nocheck
-
   import codeSectionP from "./codeSectionP.svelte";
   import EditSection from "./editSection.svelte";
   import CodeSectionJ from "./codeSectionJ.svelte";
   import CodeSectionJs from "./codeSectionJS.svelte";
   import CodeSectionC from "./codeSectionC.svelte";
-
 
   export let data;
 
@@ -98,7 +95,6 @@
       <svelte:component this={component.component} {...props} />
     </div>
   {/each}
-
 
   <!-- <CodeSection />
   <EditSection /> -->

@@ -6,7 +6,6 @@
 		"src/routes/about/+page.ts"
 	],
 	"/login": [],
-
 	"/newPage": [
 		"src/routes/newPage/+page.server.ts"
 	],
@@ -20,6 +19,5 @@
 	],
 	"/sverdle/how-to-play": [
 		"src/routes/sverdle/how-to-play/+page.ts"
-	],
-	"/us": []
+	]
 }
